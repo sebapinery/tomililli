@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EspectroJam - EEH</title>
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <article class="canvasTpFinal"> 
+
+        <div class="controles" id="seccionControles">
+            <button class="botonControl" id="boton0"><img src="img/boton_0a.jpg" alt="" class="botonTxt"></button>
+            <button class="botonControl" id="boton1"><img src="img/boton_5a.jpg" alt="" class="botonPlayPause"></button>
+            <button class="botonControl" id="boton2"><img src="img/boton_1a.jpg" alt="" class="botonScrollVerticalSuperpuesto"></button>
+            <button class="botonControl" id="boton3"><img src="img/boton_2a.jpg" alt="" class="botonScrollHorizontalSuperpuesto"></button>
+            <button class="botonControl" id="boton4"><img src="img/boton_3a.jpg" alt="" class="botonScrollVerticalIndividual"></button>
+            <button class="botonControl" id="boton5"><img src="img/boton_4a.jpg" alt="" class="botonScrollHorizontalIndividual"></button>
+            <button class="botonControl" id="boton6"><img src="img/boton_6a.jpg" alt="" class="botonGuardar"></button> 
+            <div class="controlVelocidad">
+                <center>
+                    <p class="etiqueta">Vel</p>
+                    <button class="botonMasMenos" id="boton7"><img src="img/boton_mas.jpg" alt="" class="botonMasVelo"></button>
+                    <button class="botonMasMenos" id="boton8"><img src="img/boton_menos.jpg" alt="" class="botonMenosVelo"></button>
+                </center>
+            </div>
+            <div class="controlTam">
+                <center>
+                    <p class="etiqueta">Tam</p>
+                    <button class="botonMasMenos" id="boton9"><img src="img/boton_mas.jpg" alt="" class="botonMasTam"></button>
+                    <button class="botonMasMenos" id="boton10"><img src="img/boton_menos.jpg" alt="" class="botonMenosTam"></button>
+                </center>
+            </div>       
+        </div>
+          
+        <div id="muestraTxt" onclick="display: 'none'">
+            <center>
+                <h1>EspectroJam</h1>
+                <img src="img/INVERT_TAPA_HYBRIDOS_BANDCAMP.jpg" alt="logo ensamble electronico hybrido" class="logoHybrido">
+            </center>
+            <p> * haciendo click en el boton <img src="img/boton_5a.jpg" alt="boton 0" class="imgB"> comenzará a reproducirse el multitrack.</p>
+            <p> * con los botones que se encuentran al lado izquierdo de este se pueden elegir distintos modos de visualización de espectrogramas.</p>
+            <p> * <img src="img/boton_1a.jpg" alt="boton 1" class="imgB"> visualización de pistas superpuestas en sentido vertical de arriba hacia abajo</p>
+            <p> * <img src="img/boton_2a.jpg" alt="boton 2" class="imgB"> visualización de pistas superpuestas en sentido horizontal de izquierda a derecha</p>
+            <p> * <img src="img/boton_3a.jpg" alt="boton 3" class="imgB"> visualización de pistas separadas en sentido vertical de arriba hacia abajo</p>
+            <p> * <img src="img/boton_4a.jpg" alt="boton 4" class="imgB"> visualización de pistas separadas en sentido horizontal de izquierda a derecha</p>
+            <p> * dependiendo de la posicion del mouse sobre el espectrograma, la mezcla del track variará</p>
+            <p> * acercandose con el mouse a cada esquina del canvas se enfatizará una pista del multitrack</p>
+            <p> * (arriba a la izquierda el <strong class="t1">track 1</strong>, arriba a la derecha <strong class="t2">track 2</strong>, abajo a la derecha <strong class="t3">track 3</strong>, abajo a la izquierda <strong class="t4">track4</strong>)</p>
+            <p> * con los botones Vel "+"" y "-" modificará la velocidad de visualización.</p>
+            <p> * con los botones Tam "+"" y "-" modificará el zoom en la visualización.</p>
+            <p> * para escuchar todas las pistas "al mismo volumen y sin modificaciones en la imagen stereo ubique el mouse a la mitad de la altura de la pantalla donde se escuentra el punto blanco.</p>
+            <p> * para mostrar y esconder este instructivo, vuelva a presionar el boton <img src="img/boton_0a.jpg" alt="boton 0" class="imgB"> o haga click en cualquier parte de la pantalla.</p>
+            <p> * haciendo doble click en la pantalla, se establecerá el modo Pantalla Completa</p>
+            <p> * el track fue compuesto, interpretado, grabado y producido por Ensamble Electronico Hybrido durante el año 2019 en EstudioSaurio, Villa Luro, C.A.Buenos Aires, Argentina.</p>
+            <p> * formacion del EEH en "EspectroJam":</p>
+            <ul>
+                <li> <strong> Lucas Tomasin </strong>: Cyclone TT-303, TT-606, FX</li>
+                <li> <strong> Nahuel Rodrigues </strong>: Korg MiniKaosPad</li>
+                <li> <strong> Shimon </strong>: Korg Minilogue</li>
+                <li> <strong> Tomás Lilli </strong>: Korg Arp Oddysey, FX</li>
+                <li> <strong> Yani Pantano </strong>: MFB Microzwerg</li>
+            </ul>
+            <p> * la interfaz interactiva fue desarrollada por Tomás Lilli con <a href="https://p5js.org/es/" class="linksP5">p5js</a> - <a href="https://p5js.org/es/reference/#/libraries/p5.sound" class="linksP5">p5-sound</a> - <a href="https://github.com/L05/p5.touchgui" class="linksP5"> p5.touchgui</a> durante la cursada de Tecnologias Hipermediales - Lic.AA.EE - UNTREF 2022.</p>
+            <p> * para escuchar y ver más de EEH:</p>
+            <center>
+                <p> <a href="https://ensamblehybrido.bandcamp.com/">BANDCAMP</a></p>
+                <p> <a href="https://soundcloud.com/ensamble-electronico-hybrido/">SOUNDCLOUD</a></p>
+                <p> <a href="https://youtube.com/playlist?list=PLEV8XiwORBgFze72OpV-BuqD2h5OHORuQ">YOUTUBE</a></p>
+                <p> <a href="https://www.instagram.com/ensamblehybrido/">INSTAGRAM</a></p>
+            </center>
+        </div>
+
+        <div id="anim"></div>
+        
+    </article>
+</body>
+<script src="js/p5.js"></script>
+<script src="js/p5.dom.min.js"></script>
+<script src="js/p5.sound.js"></script>
+<script src="js/p5.touchgui.js"></script>
+<script src="js/KnobMakerC.js"></script>
+<script src="js/sketch_v2.js"></script>
+<script src="js/script.js"></script>
+</html>

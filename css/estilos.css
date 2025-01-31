@@ -1,0 +1,305 @@
+
+@font-face {
+	font-family: 'fuente';
+	src: url('../fuentes/CWEBL.TTF');
+  }
+
+body {
+	width: auto;
+	height: auto;
+    margin: 0%;
+	background-color: #000000;
+	color: #ffffff;
+	margin: auto;
+	font-family: 'fuente';
+}
+
+.controles{
+    background-color: #000000;
+	display: flex;
+	position: fixed;
+	z-index: 2;
+	margin: 0%;
+	padding: 0%;
+	top: 0.5%;
+	left: 35%;
+	width: 25%;
+	height: auto;
+	align-content: center;
+}
+.controlesM{
+    background-color: #000000;
+	display: flex;
+	position: fixed;
+	z-index: 2;
+	margin: 0%;
+	padding: 0%;
+	top: 2.5%;
+	left: 1.25%;
+	width: 100%;
+	height: auto;
+	align-content: center;
+}
+.controles:hover{
+	top: 2.5%;
+	left: 10%;
+	width: 80%;
+	height: auto;
+	padding: 1%;
+}
+
+.controlVelocidad{
+	background-color: #000000;
+	display: inline;
+	position: relative;
+	margin-right: 1%;
+	margin-left: 1%;
+	padding: 0%;
+	width: 5%;
+	height: auto;
+	align-content: center;
+}
+.controlTam{
+	background-color: #000000;
+	display: inline;
+	position: relative;
+	margin-right: 1%;
+	margin-left: 1%;
+	padding: 0%;
+	width: 5%;
+	height: auto;
+	align-content: center;
+}
+
+.botonControl{
+	width: 12%;
+	height: auto;
+	position: relative;
+	top: 0%;
+	left: 0%;
+	margin: 0%;
+	padding: 0%;
+	background-color: #000000;
+	border-color: #000000;
+	box-shadow: none;
+	border-style: none;
+}
+.botonMasMenos{
+	width: 80%;
+	height: auto;
+	display: inline;
+	position: relative;
+	top: 0%;
+	left: 0%;
+	margin: 1%;
+	padding: 0%;
+	background-color: #000000;
+	border-color: #000000;
+	box-shadow: none;
+	border-style: none;
+}
+
+.botonTxt{
+	margin: 0%;
+	padding: 0%;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	max-width: 100px;
+	height: auto;
+}
+.botonPlayPause{
+	margin: 0%;
+	padding: 0%;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	max-width: 100px;
+	height: auto;
+}
+.botonScrollVerticalSuperpuesto{
+	margin: 0%;
+	padding: 0%;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	max-width: 100px;
+	height: auto;
+}
+.botonScrollHorizontalSuperpuesto{
+	margin: 0%;
+	padding: 0%;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	max-width: 100px;
+	height: auto;
+}
+.botonScrollVerticalIndividual{
+	margin: 0%;
+	padding: 0%;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	max-width: 100px;
+	height: auto;
+}
+.botonScrollHorizontalIndividual{
+	margin: 0%;
+	padding: 0%;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	max-width: 100px;
+	height: auto;
+}
+.botonGuardar{
+	margin: 0%;
+	padding: 0%;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	max-width: 100px;
+	height: auto;
+}
+.botonMasVelo{
+	display: inline;
+	margin: 0%;
+	padding: 0%;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	max-width: 50px;
+	height: auto;
+} 
+.botonMenosVelo{
+	display: inline;
+	margin: 0%;
+	padding: 0%;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	max-width: 50px;
+	height: auto;
+}
+.botonMasTam{
+	display: inline;
+	margin: 0%;
+	padding: 0%;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	max-width: 50px;
+	height: auto;
+} 
+.botonMenosTam{
+	display: inline;
+	margin: 0%;
+	padding: 0%;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	max-width: 50px;
+	height: auto;
+}
+
+.etiqueta{
+	margin: 1%;
+	padding: 1%;
+}
+
+.controles img{
+	transition: 1s;
+}
+.controles img:hover{
+	filter: invert(100%);
+}
+
+.p5Canvas{
+	display: block;
+	z-index: 1;
+	position: fixed;
+	max-height: 80%;
+	max-width: 90%;
+	top: 15%;
+	left: 5%;
+	margin: 0%;
+	padding: 0%;
+	background-color: #000000;
+	align-content: center;
+}
+
+#muestraTxt{
+	display: none;
+	background-color: #0000009f;
+	position: absolute;
+	max-width: 600px;
+	max-height: max-content;
+	text-align: justify;
+	z-index: 3;
+	top: 20%;
+	left: 15%;
+	padding: 5%;
+	font-size: 2em;
+	line-height: 1.5em;
+}
+#muestraTxt.muestra{
+	display: block;
+}
+
+
+h1{
+	font-size: 250%;
+	margin: 0%;
+	padding: 0%;
+	line-height: normal;
+	color: black;
+	background-color: rgba(255, 255, 255, 0.753);
+}
+
+.logoHybrido{
+	width:75%;
+	height: auto;
+	position: relative;
+	opacity: 0.75;
+}
+
+.imgB{
+	max-width: 50px;
+}
+
+strong{
+	color: black;
+	background-color: white;
+}
+
+.t1{color:red}
+.t2{color: green;}
+.t3{color: blue;}
+.t4{color: violet;}
+
+.linksP5{
+	font-size: 1em;
+	line-height: 1em;
+	color: black;
+	background-color: white;
+}
+.linksP5:hover{
+	font-size: 1.5em;
+	line-height: 1em;
+	color: white;
+	background-color: black;
+}
+
+a{
+	font-size: 2.5em;
+	color: black;
+	background-color: white;
+	transition: 1s;
+}
+a:hover{
+	font-size: 3em;
+	color: white;
+	background-color: black;
+}
+
